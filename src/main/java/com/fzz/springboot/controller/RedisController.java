@@ -23,7 +23,6 @@ public class RedisController {
 
     @RequestMapping("setup")
     public void setup(){
-        System.out.println(123);
         Department department = new Department();
         department.setName("开发部");
 
