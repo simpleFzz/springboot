@@ -16,5 +16,15 @@ spring:
 # jpa
   jpa:
     hibernate:
-      ddl-auto: update  # ½¨±í²ßÂÔ
+      ddl-auto: update  # ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     show-sql: true
+
+#redis
+  redis:
+    host: 192.168.128.129
+    port: 6379
+    pool:
+      max-idle: 8
+      min-idle: 0
+      max-active: 8
+      max-wait: -1
