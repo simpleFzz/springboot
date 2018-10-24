@@ -1,6 +1,6 @@
 package com.fzz.springboot.dao;
 
-import com.fzz.springboot.entity.UserInfo;
+import com.fzz.springboot.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**
@@ -9,8 +9,8 @@ import org.springframework.data.jpa.repository.JpaRepository;
  * @Author fzz
  * @Date 2018/10/24
  **/
-public interface UserInfoRepository extends JpaRepository<UserInfo, Integer> {
+public interface UserInfoRepository extends JpaRepository<User, Long> {
 
-    UserInfo findUserInfoById(Integer id);
+    User findUserInfoById(Integer id);
 
 }
