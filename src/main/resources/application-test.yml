@@ -34,3 +34,12 @@ spring:
 #    mongodb:
 #      host: 127.0.0.1
 #      port: 27017
+
+
+  #neo4j  记得把配置中的安全设置关闭否则不允许客户端访问
+  spring:
+    data:
+      neo4j:
+        uri: http://127.0.0.1:7474
+        username: neo4j
+        password: root

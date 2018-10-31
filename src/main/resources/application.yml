@@ -28,3 +28,11 @@ spring:
       min-idle: 0
       max-active: 8
       max-wait: -1
+
+#neo4j  记得把配置中的安全设置关闭否则不允许客户端访问
+  spring:
+    data:
+      neo4j:
+        uri: http://localhost:7474
+        username: neo4j
+        password: root
